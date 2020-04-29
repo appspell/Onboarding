@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="onboarding_margin">16dp</dimen>
+    <dimen name="onboarding_margin_big">24dp</dimen>
+    <dimen name="onboarding_next_button_text_size">18sp</dimen>
+</resources>

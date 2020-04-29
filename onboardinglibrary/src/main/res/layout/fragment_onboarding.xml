@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/colorAccent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onboardingPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/onboardingIndicator"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/onboarding_margin"
+        android:layout_marginBottom="@dimen/onboarding_margin_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/onboardingNextBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/onboardingNextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/onboarding_margin"
+        android:layout_marginEnd="@dimen/onboarding_margin"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingStart="@dimen/onboarding_margin"
+        android:paddingEnd="@dimen/onboarding_margin"
+        android:textAllCaps="true"
+        android:textColor="@color/onboarding_next_button_text_color"
+        android:textSize="@dimen/onboarding_next_button_text_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/onboardingIndicator"
+        app:layout_constraintEnd_toStartOf="@+id/onboardingGetStartedBtn"
+        app:layout_constraintStart_toEndOf="@+id/onboardingIndicator"
+        app:layout_constraintTop_toTopOf="@+id/onboardingIndicator"
+        tools:text="next"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/onboardingGetStartedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/onboarding_margin"
+        android:layout_marginEnd="@dimen/onboarding_margin"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingStart="@dimen/onboarding_margin"
+        android:paddingEnd="@dimen/onboarding_margin"
+        android:textAllCaps="true"
+        android:textColor="@color/onboarding_next_button_text_color"
+        android:textSize="@dimen/onboarding_next_button_text_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/onboardingIndicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/onboardingNextBtn"
+        app:layout_constraintTop_toTopOf="@+id/onboardingIndicator"
+        tools:text="get started" />
+</androidx.constraintlayout.widget.ConstraintLayout>

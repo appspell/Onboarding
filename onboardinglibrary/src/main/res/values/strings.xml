@@ -1,0 +1,4 @@
+<resources>
+    <string name="onboarding_next_button">next</string>
+    <string name="onboarding_next_button_last">get started</string>
+</resources>
