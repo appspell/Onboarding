@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:background="@color/colorAccent">
+    android:layout_height="match_parent">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/onboardingPager"
@@ -30,7 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/onboarding_margin"
-        android:layout_marginEnd="@dimen/onboarding_margin"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:clickable="true"
         android:focusable="true"
@@ -53,7 +51,6 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/onboarding_margin"
-        android:layout_marginEnd="@dimen/onboarding_margin"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:clickable="true"
         android:focusable="true"
@@ -61,8 +58,8 @@
         android:paddingStart="@dimen/onboarding_margin"
         android:paddingEnd="@dimen/onboarding_margin"
         android:textAllCaps="true"
-        android:textColor="@color/onboarding_next_button_text_color"
-        android:textSize="@dimen/onboarding_next_button_text_size"
+        android:textColor="@color/onboarding_get_started_button_text_color"
+        android:textSize="@dimen/onboarding_get_started_button_text_size"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/onboardingIndicator"
         app:layout_constraintEnd_toEndOf="parent"

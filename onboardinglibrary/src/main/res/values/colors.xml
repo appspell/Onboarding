@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="onboarding_next_button_text_color">#ffffff</color>
+    <color name="onboarding_get_started_button_text_color">#ffffff</color>
+
+    <color name="onboarding_header_color">#ffffff</color>
+    <color name="onboarding_title_color">#ffffff</color>
+    <color name="onboarding_description_color">#C1FFFFFF</color>
 </resources>

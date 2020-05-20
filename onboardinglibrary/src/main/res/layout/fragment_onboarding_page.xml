@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorAccent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/onboarding_page_padding"
+    android:paddingTop="@dimen/onboarding_page_padding"
+    android:paddingEnd="@dimen/onboarding_page_padding"
+    android:paddingBottom="@dimen/onboarding_page_bottom_padding"
+    tools:background="#29B6F6">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/onboardingPageHeader"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="adfasdf"
-        android:textSize="60sp"
-        android:textColor="#ffffff"
+        android:layout_marginBottom="@dimen/onboarding_page_vertical_margin"
+        android:gravity="center"
+        android:textColor="@color/onboarding_header_color"
+        android:textSize="@dimen/onboarding_header"
+        app:layout_constraintBottom_toTopOf="@+id/onboardingPageImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:text="Header" />
+
+    <ImageView
+        android:id="@+id/onboardingPageImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/onboarding_page_vertical_margin"
+        android:layout_marginBottom="@dimen/onboarding_page_vertical_margin"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/onboardingPageTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboardingPageHeader"
+        tools:src="@tools:sample/backgrounds/scenic"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/onboardingPageTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/onboarding_page_vertical_margin"
+        android:layout_marginBottom="@dimen/onboarding_page_vertical_margin"
+        android:gravity="center"
+        android:textColor="@color/onboarding_title_color"
+        android:textSize="@dimen/onboarding_title"
+        app:layout_constraintBottom_toTopOf="@+id/onboardingPageDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboardingPageImage"
+        tools:text="Title"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/onboardingPageDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:textColor="@color/onboarding_description_color"
+        android:textSize="@dimen/onboarding_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/onboardingPageTitle"
+        tools:text="Title" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

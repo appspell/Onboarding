@@ -34,7 +34,21 @@ data class OnboardingConfig(
 
     @Parcelize
     data class Page(
-        @ColorRes val backgroundColorRes: Int? = null
+        @ColorRes val backgroundColorRes: Int? = null,
+
+        val header: String? = null,
+        val headerRes: Int? = null,
+        @ColorRes val headerTextColorRes: Int? = null,
+
+        @DrawableRes val imageRes: Int? = null,
+
+        val title: String? = null,
+        val titleRes: Int? = null,
+        @ColorRes val titleTextColorRes: Int? = null,
+
+        val description: String? = null,
+        val descriptionRes: Int? = null,
+        @ColorRes val descriptionTextColorRes: Int? = null
     ) : Parcelable
 
     enum class AnimationType {
