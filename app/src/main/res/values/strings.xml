@@ -2,5 +2,5 @@
     <string name="app_name">OnboardingApplication</string>
     <string name="header">test header</string>
     <string name="title">title</string>
-    <string name="description">description description description description description description description description description description</string>
+    <string name="description">description</string>
 </resources>

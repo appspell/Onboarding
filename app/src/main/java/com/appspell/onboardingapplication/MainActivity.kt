@@ -13,21 +13,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val config = OnboardingConfig(
-            backgroundColorRes = R.color.colorAccent,
+            backgroundColorRes = R.color.colorPrimary,
             indicatorDrawableRes = R.drawable.custom_indicator,
             animation = OnboardingConfig.AnimationType.SLIDE,
             pages = listOf(
                 OnboardingConfig.Page(
                     backgroundColorRes = R.color.colorPrimary,
                     header = "string header",
-                    imageRes = R.drawable.ic_timeline_black_24dp,
+                    imageRes = R.drawable.ic_timeline,
                     title = "string title",
                     description = "string description"
                 ),
                 OnboardingConfig.Page(
-                    backgroundColorRes = R.color.colorPrimaryDark,
+                    backgroundColorRes = R.color.colorPrimary,
                     headerRes = R.string.header,
-                    imageRes = R.drawable.ic_timeline_black_24dp,
+                    imageRes = R.drawable.ic_timeline,
                     titleRes = R.string.title,
                     descriptionRes = R.string.description
                 ),
